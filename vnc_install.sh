@@ -5,8 +5,7 @@ read mypasswd
 
 sudo apt-get -y install ubuntu-desktop gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal 
 sudo apt-get -y install x11vnc
-x11vnc -auth guess -forever -loop -noxdamage -repeat -rfbauth ~/.vnc/passwd -rfbport 5900 -shared
-x11vnc -storepasswd ~/.vnc/passwd
+x11vnc -storepasswd $mypasswd ~/.vnc/passwd
 
 echo "# description "Start x11vnc on system boot"
 
@@ -21,3 +20,5 @@ respawn
 respawn limit 20 5
 
 x11vnc -auth guess -forever -loop -noxdamage -repeat -rfbauth ~/.vnc/passwd -rfbport 5900 -shared" >>  /etc/init/x11vnc.conf
+
+shutdown -r now
