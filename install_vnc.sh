@@ -1,7 +1,7 @@
 #!/bin/bash
 
-sudo apt-get install ubuntu-desktop gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal -y 
-sudo apt-get install vnc4server -y 
+sudo apt-get -y install ubuntu-desktop gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal 
+sudo apt-get -y install vnc4server
 vncserver :1
 echo "gnome-panel &" >> ~/.vnc/xstartup
 echo "gnome-settings-daemon &" >> ~/.vnc/xstartup
