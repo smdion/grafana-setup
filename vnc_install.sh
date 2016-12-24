@@ -12,8 +12,7 @@ echo $mypasswd | vncpasswd -f > /home/$myuser/.vnc/passwd
 chown -R $myuser:$myuser /home/$myuser/.vnc
 chmod 0600 /home/$myuser/.vnc/passwd
 x11vnc -auth guess -forever -loop -noxdamage -repeat -rfbauth /home/$myuser/.vnc/passwd -rfbport 5900 -shared
-echo '
-description "x11vnc"
+echo 'description "x11vnc"
 
 start on runlevel [2345]
 stop on runlevel [^2345]
