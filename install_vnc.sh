@@ -1,7 +1,7 @@
 #!/bin/bash
 
-read -s -p "Enter Ubuntu Username" myuser
-read -s -p "Enter VNC Password" mypasswd
+read "Enter Ubuntu Username: " myuser
+read "Enter VNC Password: " mypasswd
 
 sudo apt-get -y install ubuntu-desktop gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal 
 sudo apt-get -y install vnc4server
