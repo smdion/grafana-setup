@@ -21,6 +21,6 @@ ExecStart=/usr/bin/x11vnc -xkb -auth /var/run/lightdm/root/:0 -noxrecord -noxfix
 WantedBy=multi-user.target
 EOF
 
-systemctl daemon-reload
-systemctl enable x11vnc.service
-systemctl start x11vnc.service
+sudo systemctl daemon-reload
+sudo systemctl enable x11vnc.service
+sudo systemctl start x11vnc.service
