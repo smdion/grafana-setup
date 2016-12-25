@@ -14,7 +14,7 @@ After=multi-user.target
  
 [Service]
 Type=simple
-ExecStart=/usr/bin/x11vnc -xkb -auth /var/run/lightdm/root/:0 -noxrecord -noxfixes -noxdamage -rfbauth /etc/x11vncpasswd -forever -bg -rfbport 5900 -o /var/log/x11vnc.log  > /dev/null 2>&1
+ExecStart=/usr/bin/x11vnc -auth guess -forever -loop -noxdamage -repeat -rfbauth /etc/x11vncpasswd -rfbport 5900 -shared
 
  
 [Install]
