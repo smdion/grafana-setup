@@ -15,6 +15,8 @@
 2. Install Telegraf on all severs your want to monitor
 3. Set telegraf config (I took mine from the dashboards site)
 4. If on Ubuntu 16.04, need to change ETH devices back to eth0 naming scheme
+5. Run influxdb on server
+6. Run telegraf on all servers you want to monitor
 
 ## Still ToDo
 * Figure out autostart on telegraf agents
