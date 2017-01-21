@@ -7,7 +7,7 @@
 * InfluxDB - database agents send stuff to
 * influxdb.conf - configuration for database
 * telegraf.conf - configuration for agent
-* .json - pre-configured dashboards (NOTE: a lot of time you can download a .json and telegraf.conf)
+* .json - pre-configured dashboards (NOTE: a lot of time you can download a .json and telegraf.conf) - https://grafana.net/dashboards
 
 ## Install Process
 
