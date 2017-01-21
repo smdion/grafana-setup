@@ -1,4 +1,4 @@
-= Definitions =
+# Definitions
 
 * Telegraf - agent on computers to monitor
 * Grafana - prettyness
