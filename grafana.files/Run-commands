@@ -1,0 +1,2 @@
+telegraf -config telegraf.conf
+sudo influxd -config /etc/influxdb/influxdb.conf
