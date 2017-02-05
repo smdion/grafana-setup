@@ -3,7 +3,6 @@
 echo "Please enter the VNC password followed by ENTER:"
 read mypasswd
 
-sudo apt-get -y install ubuntu-desktop gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal 
 sudo apt-get -y install x11vnc
 /usr/bin/x11vnc -storepasswd $mypasswd /etc/x11vncpasswd
 
