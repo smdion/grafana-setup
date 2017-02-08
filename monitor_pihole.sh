@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt-get install python-influxdb
+sudo apt-get install -y python-influxdb
 
 sudo cat > /etc/telegraf/pihole.py << EOF
 #! /usr/bin/python
