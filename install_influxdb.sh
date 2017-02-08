@@ -4,7 +4,7 @@
 wget https://dl.influxdata.com/influxdb/releases/influxdb_1.2.0_amd64.deb
 sudo dpkg -i influxdb_1.2.0_amd64.deb
 
-# Setup telegraf.conf
+# Setup influxdb.conf
 sudo rm -r /etc/influxdb/influxdb.conf
 sudo cat > /etc/influxdb/influxdb.conf << EOF
 ### Welcome to the InfluxDB configuration file.
@@ -442,6 +442,8 @@ sudo cat > /etc/influxdb/influxdb.conf << EOF
   # run-interval = "1s"
 EOF
 
+
+# Setup Auto Start
 sudo systemctl daemon-reload
 sudo systemctl start influxdb
 sudo systemctl enable influxdb.service
