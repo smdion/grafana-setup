@@ -8,7 +8,7 @@ Note: Scripts were setup for Ubuntu 16.04
 * Run install_influxdb.sh (database for all data shown in dashboard) 
 * Run install_telegraf.sh (agent that sends data to influx) edit line 39 for influxdb ip
 * Setup user accounts in Grafana
-* Import JSONs
+* Import JSONs (pre built grafana dashboards)
 
 ## Any Linux server you want to monitor
 * Run install_x11vnc.sh (vnc access)
