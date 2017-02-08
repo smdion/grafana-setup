@@ -2,8 +2,11 @@
 
 # Install Telegraf
 curl -sL https://repos.influxdata.com/influxdb.key | sudo apt-key add -
+sleep 5
 source /etc/lsb-release
+sleep 5
 echo "deb https://repos.influxdata.com/${DISTRIB_ID,,} ${DISTRIB_CODENAME} stable" | sudo tee /etc/apt/sources.list.d/influxdb.list
+sleep 5
 sudo apt-get update && sudo apt-get install -y telegraf
 
 # Setup telegraf.conf
