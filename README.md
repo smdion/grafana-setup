@@ -14,3 +14,7 @@ Note: Scripts were setup for Ubuntu 16.04
 * Run install_x11vnc.sh (vnc access)
 * Run install_telegraf.sh (agent that sends data to influx)
 * Import JSONs
+
+## Pi-Hole monitoring
+* Run install_monitor_pihole.sh (sets up python script and adds service)
+* * May need to change IP for host
